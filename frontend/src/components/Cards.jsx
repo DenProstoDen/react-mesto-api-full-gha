@@ -3,7 +3,7 @@ import CurrentUserContext from "../context/CurentUserContext.js"
 
 export default function Card ({card, onCardClick, onDelete, onCardLike}){
   const currentUser = useContext(CurrentUserContext);
-  const isLiked = card.likes.some(i => i._id === currentUser._id);
+  const isLiked = card.likes.some(id => id === currentUser._id);
   const cardLikeClassName = ( 
     `card__like ${isLiked && 'card__like_active'}` 
 );
@@ -22,7 +22,7 @@ export default function Card ({card, onCardClick, onDelete, onCardLike}){
               <span className="card__like_numbers">{card.likes.length}</span>
             </button> 
           </div>
-          {currentUser._id === card.owner._id &&  <button type="button" className="card__delete" onClick={() => onDelete(card._id)}/>}
+          {currentUser._id === card.owner &&  <button type="button" className="card__delete" onClick={() => onDelete(card._id)}/>}
         </div>
     )
 }
