@@ -1,0 +1,8 @@
+.error {
+    color: red;
+    line-height: 14.52px;
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+}

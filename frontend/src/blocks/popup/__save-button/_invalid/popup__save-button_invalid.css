@@ -1,0 +1,7 @@
+.popup__save-button_invalid {
+    opacity: 0.2;
+    color: white;
+}
+.popup__save-button_invalid:hover {
+    opacity: 0.2;
+}

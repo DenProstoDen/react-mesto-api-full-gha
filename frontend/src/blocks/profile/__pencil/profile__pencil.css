@@ -1,0 +1,33 @@
+.profile__pencil {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url(../../../images/Edit_Button.svg);
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    padding: 12px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+.profile__pencil:hover {
+    opacity: 0.6;
+}
+@media screen and (max-width: 400px) {
+    .profile__pencil {
+        position: relative;
+        left: 115px;
+        top: -60px;
+        width: 18px;
+        height: 18px;
+        background-size: 19px;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    .profile__pencil {
+        position: relative;
+        left: 170px;
+        bottom: 60px;
+    }
+}

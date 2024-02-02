@@ -1,0 +1,11 @@
+.element__place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 19px 20px 20px;
+}
+@media screen and (max-width: 400px){
+    .element__place {
+        padding: 16.7px 20px 25px 20px;
+    }
+}
