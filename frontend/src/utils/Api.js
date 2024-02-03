@@ -77,7 +77,7 @@ class Api {
   }
 
   const api = new Api({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'api.denmyname.nomoredomainsmonster.ru',
   });
   
   export default api
