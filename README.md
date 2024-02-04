@@ -5,12 +5,12 @@
   
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Адрес репозитория: https://github.com/...
+Адрес репозитория: https://github.com/DenProstoDen/react-mesto-api-full-gha
 
 ## Ссылки на проект
 
 IP-адрес 158.160.129.128
 
-Frontend https://...
+Frontend http://denmyname.nomoredomainswork.ru/
 
-Backend https://...
+Backend http://api.denmyname.nomoredomainswork.ru/
