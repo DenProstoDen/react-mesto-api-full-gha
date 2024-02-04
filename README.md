@@ -11,6 +11,6 @@
 
 IP 158.160.129.128
 
-Frontend http://denmyname.nomoredomainswork.ru/
+Frontend https://denmyname.nomoredomainswork.ru/
 
-Backend http://api.denmyname.nomoredomainswork.ru/
+Backend https://api.denmyname.nomoredomainswork.ru/

@@ -77,7 +77,7 @@ class Api {
   }
 
   const api = new Api({
-    baseUrl: 'api.denmyname.nomoredomainsmonster.ru',
+    baseUrl: 'https://api.denmyname.nomoredomainsmonster.ru',
   });
   
   export default api
