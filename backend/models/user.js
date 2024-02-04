@@ -1,7 +1,5 @@
-// Создаём схему и модель для сущности пользователя.
 const mongoose = require('mongoose');
 const validator = require('validator');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const bcrypt = require('bcryptjs');
 const AuthorisationError = require('../errors/AuthorisationError');
 
