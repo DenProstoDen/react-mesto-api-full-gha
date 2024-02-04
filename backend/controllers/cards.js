@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const Card = require('../models/card');
 const BadRequest = require('../errors/BadRequest');
 const NotFoundError = require('../errors/NotFoundError');
@@ -7,9 +8,9 @@ module.exports.createCard = (req, res, next) => {
   const { name, link } = req.body;
   const owner = req.user._id;
   Card.create({ name, link, owner })
-    .then((card) => res.status(201).send(card))
+    .then((card) => res.status(200).send(card))
     .catch((err) => {
-      if (err.name === 'ValidationError') {
+      if (err instanceof mongoose.Error.ValidationError) {
         next(new BadRequest('Переданы некорректные данные при создании карточки'));
       } else { next(err); }
     });
@@ -26,10 +27,10 @@ module.exports.deleteCard = (req, res, next) => {
   Card.findById(cardId)
     .then((card) => {
       if (!card) {
-        return next(new NotFoundError('Карточка не найдена'));
+        return next(new NotFoundError('Карточка с указанным _id не найдена'));
       }
       if (card.owner.toString() !== req.user._id) {
-        return next(new ForbiddenError('Удаление карточки другого пользователя'));
+        return next(new ForbiddenError('Карточка другого пользователя, ее нельзя удалить'));
       }
       return Card.deleteOne(card)
         .then(() => { res.status(200).send({ message: 'Карточка удалена' }); });
