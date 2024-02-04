@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.denmyname.nomerodomainmonster.ru';
+export const BASE_URL = 'https://api.denmyname.nomoredomainswork.ru';
 
 const getResponse = (res) => {
   return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`);
