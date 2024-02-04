@@ -80,4 +80,4 @@ class Api {
     url: 'https://api.denmyname.nomoredomainswork.ru',
   });
   
-  export default api
+  export default api;
