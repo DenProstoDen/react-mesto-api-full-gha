@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP: 158.160.145.230
+IP 158.160.145.230
 
 Frontend https://denmyname.nomoredomainswork.ru/
 
